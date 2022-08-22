@@ -1,10 +1,10 @@
 .container {
     display: grid;
-    grid-template: 1fr 2fr 2fr / 1fr 2fr 1fr;
+    grid-template: 1fr 5fr / 1fr 5fr;
     border-color: blue;
-    gap: 10px;
     height: 100vh;
-}
+    gap: 10px;
+}   
 
 div {
     border: 4px;
@@ -13,27 +13,42 @@ div {
 
 .header {
     border-color: green;
-    
+    grid-area: 1 / 2
 }
 
 .sidebar {
     border-color: orange;
-
+    grid-area: 1 / 1 / 4 / 2 ;
 }
 
 .main {
     border-color: black;
+    grid-area: 2 / 2 / 4 / 4;
+    display: grid;
+    grid-template: 1fr / 2fr 1fr;
+    gap: 10px; 
+
 }
 
 .projects {
-    border-color: brown;
+    border-color: rgb(233, 255, 64);
+    grid-area: 1 / 1 ;
+    
+}
+
+.ann-trend{
+    grid-area: 1 / 2;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+    gap: 10px;
 }
 
 .announcements {
     border-color: red;
-
+    grid-area: 1 / 1;
 }
 
 .trending {
     border-color: aqua;
+    grid-area:  2 / 1;
 }
