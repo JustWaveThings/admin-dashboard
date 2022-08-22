@@ -1,0 +1,39 @@
+.container {
+    display: grid;
+    grid-template: 1fr 2fr 2fr / 1fr 2fr 1fr;
+    border-color: blue;
+    gap: 10px;
+    height: 100vh;
+}
+
+div {
+    border: 4px;
+    border-style: solid;
+}
+
+.header {
+    border-color: green;
+    
+}
+
+.sidebar {
+    border-color: orange;
+
+}
+
+.main {
+    border-color: black;
+}
+
+.projects {
+    border-color: brown;
+}
+
+.announcements {
+    border-color: red;
+
+}
+
+.trending {
+    border-color: aqua;
+}
