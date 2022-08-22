@@ -4,6 +4,7 @@
     border-color: blue;
     height: 100vh;
     gap: 10px;
+    background-color: #e2e8f0;
 }   
 
 div {
@@ -13,12 +14,14 @@ div {
 
 .header {
     border-color: green;
-    grid-area: 1 / 2
+    grid-area: 1 / 2;
+    background-color: #fff;
 }
 
 .sidebar {
     border-color: orange;
     grid-area: 1 / 1 / 4 / 2 ;
+    background-color: #0ea5e9;
 }
 
 .main {
@@ -27,6 +30,7 @@ div {
     display: grid;
     grid-template: 1fr / 2fr 1fr;
     gap: 10px; 
+    
 
 }
 
@@ -46,9 +50,26 @@ div {
 .announcements {
     border-color: red;
     grid-area: 1 / 1;
+    background-color: #fff;
 }
 
 .trending {
     border-color: aqua;
     grid-area:  2 / 1;
+    background-color: #fff;
+    
+}
+
+li {
+    list-style: none;
+}
+
+li.proj-item {
+    border: 1px solid orange;
+}
+li.ann-items {
+    border: 1px solid navy;
+}
+li.trend-items {
+    border: 1px solid gray;
 }
