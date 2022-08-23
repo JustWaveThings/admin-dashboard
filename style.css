@@ -33,6 +33,11 @@ h1 {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(19deg) brightness(103%) contrast(101%);
 }
 
+body>div>div.main>div.ann-trend>div.announcements>ul>li>p {
+    font-size: smaller;
+} 
+
+
 h2 {
     font-size: 1.5rem;
     font-weight: 400;
@@ -54,8 +59,11 @@ p.tag-text {
 }
 
 .greeting {
-    font-weight: 300;
-    
+    font-size: small;
+}
+
+.dashboard-logo {
+    rotate: 10deg;
 }
 
 * {
@@ -154,8 +162,16 @@ li.trend-items {
 }
 
 .button:hover {
-    background-color: #0ea5e9;
+    background-color: #0ea4e94e;
 }
+.star:hover,
+.watch:hover,
+.share:hover,
+.nav:hover,
+.sm-material-icon:hover {
+    transform: scale(85%);
+}
+
 
 .button:active {
     background-color: green;
@@ -165,5 +181,5 @@ li.trend-items {
 
 .search-input input {
     width: 500px;
-    min-height: max-content;
+    height: 1.5rem;
 }
